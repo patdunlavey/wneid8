@@ -1,0 +1,15 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/wnei.css: {}
+
+leaflet:
+  css:
+    theme:
+      css/leaflet.css: {}
+  js:
+    js/leaflet.js: {}
+    js/map.js: {}
+  dependencies:
+    - core/jquery

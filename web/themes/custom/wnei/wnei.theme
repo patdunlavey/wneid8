@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function wnei_preprocess_node(&$vars) {
+  switch ($vars['node']->getType()) {
+    case 'meeting_info':
+      $vars['content']['field_day_of_week']['#title'] = t('Day and time');
+      break;
+  }
+}

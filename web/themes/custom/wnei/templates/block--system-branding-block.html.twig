@@ -1,0 +1,40 @@
+{% extends "block--bare.html.twig" %}
+{#
+/**
+ * @file
+ * Default theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ *
+ * @ingroup templates
+ */
+#}
+{% block content %}
+  <div class="branding-content">
+    {% if site_logo %}
+      <div class="site-branding__logo">
+        <a class="logo navbar-btn pull-left" href="{{ path('<front>') }}"
+           title="{{ 'Home'|t }}" rel="home">
+          <img src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
+        </a>
+      </div>
+    {% endif %}
+      <div class="site-branding-text">
+          <div class="slaa-title">Sex and Love Addicts Anonymous</div>
+        <div class="title"><a class="name" href="{{ path('<front>') }}"
+                              title="{{ 'Home'|t }}" rel="home">{{ 'Western New England Intergroup'|t }}</a></div>
+          <div class="slogan">You are not alone</div>
+        <div class="contact-info">
+          <span class="phone"><a href="tel:888-395-0270">888-395-0270</a></span>
+          <span class="email"><a href="mailto:wneislaa@yahoo.com">wneislaa@yahoo.com</a></span>
+        </div>
+      </div>
+    <div class="clearfix"></div>
+  </div>
+{% endblock %}
