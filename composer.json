@@ -27,7 +27,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.4",
         "drupal/ctools": "^3.0",
-        "drupal/devel": "^1.2",
+        "drupal/devel": "^2.0",
         "drupal/geofield": "^1.0@alpha",
         "drupal/geophp": "^1.0@beta",
         "drupal/masquerade": "^2.0@beta",
